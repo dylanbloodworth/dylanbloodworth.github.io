@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color: #201f1e; /* Change to the desired color code */
+    font-size: 45px;
+    color: white;
+}
+
+.title {
+    margin-left: 8%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    font-size: 50px;
+}
+
+a:visited {
+    color: inherit; /* Visited link text color */
+}
+
+.menu {
+    margin: 3%;
+    float: left;
+    width: 30%;
+}
+
+.feynman {
+    margin-left: 2%;
+    float: right;
+    width: 62%;
+}
+
+@media screen and (max-width: 1200px) {
+    .title {
+        width: 100%;
+    }
+    
+    .menu
+    {
+        width: 100%;
+    }
+
+    .feynman {
+        margin-top: 5%;
+        width: 100%;
+    }
+    
+}

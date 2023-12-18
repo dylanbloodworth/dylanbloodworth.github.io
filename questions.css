@@ -1,0 +1,29 @@
+body {
+    font-size: 25px;
+    background-color: #201f1e;
+    color: whitesmoke;
+}
+
+h1 {
+    color: gold;
+    margin: 0;
+    padding: 0;
+    word-wrap: overflow-wrap;
+    font-size: 610px;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    font-size: 50px;
+}
+
+a:visited {
+    color: inherit; /* Visited link text color */
+}
+footer {
+    margin-top: 20px;
+}
