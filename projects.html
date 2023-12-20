@@ -7,42 +7,70 @@
 
     <style>
         body {
-            width: 100%;
-            font-size: 2em;
+            margin: 0 auto;
+            width: 95%;
+            font-size: 1.5em;
             color: white;
             background-color: #201f1e;
         }
 
         a {
             color: white;
-            text-decoration: underline;
+            text-decoration: none;
         }
         a:visited {
             color: inherit; /* Visited link text color */
         }
+
+        a:hover{
+            font-size: 150%;
+        }
+
+        footer {
+            margin-top: 5%;
+        }
+
+        .link {
+            padding-top: 2%;
+        }
+
+        @media screen and (max-width: 800px) {
+        .link {
+            font-size: 75%;
+    }
+    
+}
     </style>
 
 </head>
 
 <body>
-    <div margin = 20%> 
-        what have <font color = "red">I</font> done?
+    <div> 
+        <h1>what have <font color = "red">I</font> done?</h1>
     </div>
-    <br>
-    <div>
-        9.28.22 <a href="projects/feynman_bio.html">Feynman Biography</a>
+    <div class="link">
+        12.11.23 <a href="projects/Bloodworth_521Project.pdf">hearing shape of drum</a>
     </div>
-    <br>
-    <div>
-        10.12.22 <a href="projects/ligo.html">LIGO Histroy</a>
+    <div class = "link">
+        12.07.22 <a href="projects/qm_philos.pdf" download>quantum philosophy review</a>
     </div>
-    <br>
-    <div>
-        11.2.22 <a href="projects/cold_war.html">Cold War Science</a>
+    <div class = "link">
+        11.2.22 <a href="projects/cold_war.pdf">cold war science</a>
     </div>
-    <br>
-    <div>
-        12.07.22 <a href="projects/projectfiles/qm_philos.pdf" download>Quantum Philosphy Review</a>
+    <div class = "link">
+        10.12.22 <a href="projects/ligo.pdf">ligo history</a>
     </div>
+    <div class = "link">
+        9.28.22 <a href="projects/feynman_bio.pdf">feynman biography</a>
+    </div>
+    <div class="link">
+        4.11.22 <a href="projects/intelligent_design.pdf">intelligent design research</a>
+    </div>
+    <div class="link">
+        2.22.22 <a href="projects/einstein_report.pdf">einstein and religion analysis</a>
+    </div>
+    <footer>
+        <a href="index.html">go do <font color=#00cf78>mo</font>re</a>
+    </footer>
 </body>
 </html>
