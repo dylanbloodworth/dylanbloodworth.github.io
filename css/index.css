@@ -1,3 +1,7 @@
+body {
+    font-family: 'Verdana', sans-serif;
+}
+
 .container {
     border: 1px solid red;
 }
@@ -10,8 +14,9 @@ a {
     color: red;
 }
 
-.main-nav {
-    background-color: green;
+.link-block {
+    border: 1px solid red;
+    padding: 1em
 }
 
 .card {
@@ -30,4 +35,10 @@ a {
         /* auto-fit: repeats as many times as needed to fill the grid container*/
         /* minmax(): defines size range of the columns */
     gap: 0.5em;
+}
+
+.footer-content {
+    text-align: center;
+    /*border: 1px solid green;*/
+    padding: 1em;
 }

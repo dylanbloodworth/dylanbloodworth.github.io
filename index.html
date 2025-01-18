@@ -10,7 +10,7 @@
         <title>[Blog Name]</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="./css/index.css">
         <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -19,11 +19,11 @@
         <![endif]-->
         
         
-        <nav up-nav>
-            <div class="link-block">
+        <nav>
+            <div class="link-block" hx-boost="true"> <!-- hx-boost turns anchors to use AJAX -->
                 <a class="list-group-item" href="./index.html">Home</a>
-                <a class="list-group-item" href="./blog.html">Blog</a>
-                <a class="list-group-item" href="./about.html">About</a>
+                <a class="list-group-item" href="./pages/blog.html">Blog</a>
+                <a class="list-group-item" href="./pages/about.html">About</a>
             </div> 
         </nav>
 
@@ -33,7 +33,7 @@
 
         <div class="grid-container">
             <div class="card">
-                <h2>Lorem Ipsum</h2>
+                <h2 hx-pull>Lorem Ipsum</h2>
                 Test Test Test
             </div>
             <div class="card">
@@ -46,5 +46,17 @@
             </div>
         </div>
 
+
+        <button hx-get="./pages/about.html">Test</button>
+
+
+        
     </body>
+
+    <footer>
+        <div class="footer-content">
+            &copy; 2025 Dylan Bloodworth. All rights reserved.
+        </div>
+    </footer>
+    
 </html>
