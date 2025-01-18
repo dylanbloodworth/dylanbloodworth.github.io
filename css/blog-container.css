@@ -1,0 +1,46 @@
+.blog-container {
+    display: grid;
+    border: 1px solid red;
+    /* grid-template-comment */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 4fr)); 
+        /* repeat(repeat-count, tracks): repeats a set of columns/rows in a grid*/
+        /* auto-fit: repeats as many times as needed to fill the grid container*/
+        /* minmax(): defines size range of the columns */
+    gap: 1em;
+    padding: 0.5em;
+    overflow-y: scroll;
+}
+
+.blog-item {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    height: 45vh;
+    overflow: hidden;
+    border: 1px solid green;
+}
+
+.blog-item:hover {
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.25);
+}
+
+.blog-img svg, .blog-img img {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    border: 2px solid var(--border-color-regular);
+    border-radius: 2em;
+}
+.blog-img p {
+    padding: 0.5em;
+    text-align: left;
+    font-size: 16px;
+    max-height: 50vh;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.blog-info {
+    height: 100vh;
+    padding : 0.25em;
+    border:1px solid red;
+}

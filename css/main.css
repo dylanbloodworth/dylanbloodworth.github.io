@@ -1,5 +1,5 @@
 @import url("side-bar.css");
-@import url("blog-viewer.css");
+@import url("blog-container.css");
 
 body {
     font-family: 'Segoe UI', sans-serif;
@@ -10,8 +10,8 @@ body {
 .content {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 4fr;
-    min-height: 90vh;
-    min-width: 90vw;
+    height: 94vh;
+    max-width: 99vw;
 }
 
 

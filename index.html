@@ -1,40 +1,141 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Chasing Curiosity</title>
-        <meta name="description" content="">
+        <meta name="description" content>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/main.css">
-        <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+
+        <!-- htmx library -->
+        <script src="https://unpkg.com/htmx.org@2.0.4"
+            integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+            crossorigin="anonymous"></script>
+
+        <!-- Tailwind library-->
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>        
-        
-        <main class="content"> 
+    <body>
+
+        <main class="content">
+
+            <!-- Side Bar Section. -->
             <div class="side-bar">
-                <div class="logo"><img src="logo-cropped.svg" alt="Chasing Curiosity"></div>
-                <div class="caption">All our knowledge begins with the senses, proceeds then to the understanding, and ends with reason. There is nothing higher than reason.</div>
-                <div class="topic-list" hx-boost="true"> <!-- hx-boost turns anchors to use AJAX -->
-                    <div class="topic-item" style="border-top: 1px solid var(--border-color-regular); padding-top: 1em;">One</div>
+                <div class="logo"><img src="logo-cropped.svg"
+                        alt="Chasing Curiosity"></div>
+                <div class="caption">All our knowledge begins with the senses,
+                    proceeds then to the understanding, and ends with reason.
+                    There is nothing higher than reason.</div>
+                <!-- Navigation/Topic Links -->
+                <div class="topic-list" hx-boost="true">
+                    <!-- hx-boost turns anchors to use AJAX -->
+                    <div
+                        class="topic-item border-t-[1px] border-[var(--border-color-regular)] pt-4">One</div>
                     <div class="topic-item">Two</div>
                     <div class="topic-item">Three</div>
                 </div>
             </div>
 
+            <!-- This section contains the main blog  -->
             <div class="blog-container">
-                <div class="blog-item">
-                    <h1>Home Page Content</h1>
+
+                <div class="blog-item"
+                    hx-get="blog-posts/test-blog1.html"
+                    hx-trigger="mouseenter throttle:500ms"
+                    hx-target="find .blog-img"
+                    hx-swap="innerHTML">
+                    <div
+                        hx-get="blog-posts\blog-photos\1-18-25-doomscrolling.svg"
+                        hx-trigger="mouseleave throttle:500ms"
+                        hx-target="find .blog-img"
+                        hx-swap="innerHTML">
+                        <div class="blog-img">
+                            <img src="blog-posts\blog-photos\1-18-25-doomscrolling.svg" alt="Doomscrolling">
+                        </div>
+                        <div class="blog-info">Doomscrolling - Profiting of the attention of people</div>
+                    </div>
+                </div>
+                <div class="blog-item"
+                    hx-get="blog-posts/test-blog1.html"
+                    hx-trigger="mouseenter throttle:500ms"
+                    hx-target="find .blog-img"
+                    hx-swap="innerHTML">
+                    <div
+                        hx-get="logo-cropped.svg"
+                        hx-trigger="mouseleave throttle:500ms"
+                        hx-target="find .blog-img"
+                        hx-swap="innerHTML">
+                        <div class="blog-img"><img src="logo-cropped.svg"
+                                alt="Blog Image"></div>
+                        <div class="blog-info">Test Blog 1</div>
+                    </div>
+                </div>
+                <div class="blog-item"
+                    hx-get="blog-posts/test-blog1.html"
+                    hx-trigger="mouseenter throttle:500ms"
+                    hx-target="find .blog-img"
+                    hx-swap="innerHTML">
+                    <div
+                        hx-get="logo-cropped.svg"
+                        hx-trigger="mouseleave throttle:500ms"
+                        hx-target="find .blog-img"
+                        hx-swap="innerHTML">
+                        <div class="blog-img"><img src="logo-cropped.svg"
+                                alt="Blog Image"></div>
+                        <div class="blog-info">Test Blog 1</div>
+                    </div>
+                </div>
+                <div class="blog-item"
+                    hx-get="blog-posts/test-blog1.html"
+                    hx-trigger="mouseenter throttle:500ms"
+                    hx-target="find .blog-img"
+                    hx-swap="innerHTML">
+                    <div
+                        hx-get="logo-cropped.svg"
+                        hx-trigger="mouseleave throttle:500ms"
+                        hx-target="find .blog-img"
+                        hx-swap="innerHTML">
+                        <div class="blog-img"><img src="logo-cropped.svg"
+                                alt="Blog Image"></div>
+                        <div class="blog-info">Test Blog 1</div>
+                    </div>
+                </div>
+                <div class="blog-item"
+                    hx-get="blog-posts/test-blog1.html"
+                    hx-trigger="mouseenter throttle:500ms"
+                    hx-target="find .blog-img"
+                    hx-swap="innerHTML">
+                    <div
+                        hx-get="logo-cropped.svg"
+                        hx-trigger="mouseleave throttle:500ms"
+                        hx-target="find .blog-img"
+                        hx-swap="innerHTML">
+                        <div class="blog-img"><img src="logo-cropped.svg"
+                                alt="Blog Image"></div>
+                        <div class="blog-info">Test Blog 1</div>
+                    </div>
+                </div>
+                <div class="blog-item"
+                    hx-get="blog-posts/test-blog1.html"
+                    hx-trigger="mouseenter throttle:500ms"
+                    hx-target="find .blog-img"
+                    hx-swap="innerHTML">
+                    <div
+                        hx-get="logo-cropped.svg"
+                        hx-trigger="mouseleave throttle:500ms"
+                        hx-target="find .blog-img"
+                        hx-swap="innerHTML">
+                        <div class="blog-img"><img src="logo-cropped.svg"
+                                alt="Blog Image"></div>
+                        <div class="blog-info">Test Blog 1</div>
+                    </div>
                 </div>
             </div>
         </main>
-       
-    </body> 
-    
+    </body>
+
+    <!-- Footer Section -->
     <footer>
         <div class="footer-content">
             &copy; 2025 Dylan Bloodworth. All rights reserved.
