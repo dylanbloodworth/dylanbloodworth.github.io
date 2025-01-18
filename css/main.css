@@ -1,0 +1,54 @@
+@import url("side-bar.css");
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: var(--text-color-medium);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 4fr;
+    min-height: 90vh;
+    min-width: 90vw;
+}
+
+
+.link-block {
+    /* border: 1px solid red; */
+    padding: 1em
+}
+
+.grid-container {
+    display: grid;
+    border: 1px solid red;
+    /* grid-template-comment */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        /* repeat(repeat-count, tracks): repeats a set of columns/rows in a grid*/
+        /* auto-fit: repeats as many times as needed to fill the grid container*/
+        /* minmax(): defines size range of the columns */
+    gap: 0.5em;
+}
+
+footer {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding : 1em;
+    color: var(--text-color-light);
+    font-size : 0.8em
+}
+
+:root {
+    --base-padding: 20px;
+    --border-color-regular: #00000014;
+    --text-color-extra-light: #0003;
+    --text-color-light: #0006;
+    --text-color-medium: #0009;
+    --text-color-dark: #111;
+    --text-color-regular: #040404;
+    --spacing-xs: 20px;
+    --spacing-s: 40px;
+    --spacing-m: 40px;
+    --spacing-l: 60px;
+    --spacing-xl: 60px
+}
