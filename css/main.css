@@ -4,7 +4,7 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     -webkit-font-smoothing: antialiased;
-    color: var(--text-color-medium);
+    color: var(--nav-color);
 }
 
 .content {
@@ -12,6 +12,7 @@ body {
     grid-template-columns: minmax(200px, 1fr) 4fr;
     height: 94vh;
     max-width: 99vw;
+    padding-top: 1em;
 }
 
 
@@ -35,21 +36,17 @@ footer {
     grid-column: 1 / -1;
     text-align: center;
     padding : 1em;
-    color: var(--text-color-light);
+    color: red;
     font-size : 0.8em
 }
 
 :root {
     --base-padding: 20px;
     --border-color-regular: #00000014;
-    --text-color-extra-light: #0003;
-    --text-color-light: #0006;
-    --text-color-medium: #0009;
-    --text-color-dark: #111;
+    --description-text-medium: #000000a8;
+    --blog-title-dark: #111;
     --text-color-regular: #040404;
-    --spacing-xs: 20px;
-    --spacing-s: 40px;
-    --spacing-m: 40px;
-    --spacing-l: 60px;
-    --spacing-xl: 60px
+    --nav-color: #0009;
+    --border-radius-400: 0.375rem;
+    --text-color-hover: rgb(62, 104, 241);
 }
