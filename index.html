@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chasing Curiosity</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/main.css">
+
+        <!-- htmx library -->
+        <script src="https://unpkg.com/htmx.org@2.0.4"
+            integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+            crossorigin="anonymous"></script>
+
+        <!-- Tailwind library-->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+
+        <main class="content">
+
+            <!-- Side Bar Section. -->
+            <div class="side-bar">
+                <div class="logo"><img src="logo-cropped.svg"
+                        alt="Chasing Curiosity"></div>
+                <div class="caption">All our knowledge begins with the senses,
+                    proceeds then to the understanding, and ends with reason.
+                    There is nothing higher than reason.</div>
+                <!-- Navigation/Topic Links -->
+                <div class="topic-list" hx-boost="true">
+                    <!-- hx-boost turns anchors to use AJAX -->
+                    <div
+                        class="topic-item border-t-[1px] border-[var(--border-color-regular)] pt-4">One</div>
+                    <div class="topic-item">Two</div>
+                    <div class="topic-item">Three</div>
+                </div>
+            </div>
+
+            <!-- This section contains the main blog  -->
+            <div class="blog-container">
+                <div class="blog-item">
+                    <div class="blog-img"> <img
+                            src="blog-posts\blog-photos\1-18-25-doomscrolling.svg"
+                            alt="Doomscrolling"> </div>
+                    <div class="blog-info">
+                        <div class="blog-author">
+                            Dylan Bloodworth
+                        </div>
+                        <div class="blog-title">
+                            Doomscrolling - Profiting of the attention of people
+                        </div>
+                        <div class="blog-description">
+                            For better or for worse, it’s hard to refute technology’s influence on our culture. Technical innovations in medicine, communication systems, energy, engineering, and AI are just a few fields impacted by tech’s exponential development.
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-img"> <img
+                            src="blog-posts\blog-photos\1-18-25-doomscrolling.svg"
+                            alt="Doomscrolling"> </div>
+                    <div class="blog-info">
+                        <div class="blog-author">
+
+                        </div>
+                        <div class="blog-title">
+
+                        </div>
+                        <div class="blog-description">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-img"> <img
+                            src="blog-posts\blog-photos\1-18-25-doomscrolling.svg"
+                            alt="Doomscrolling"> </div>
+                    <div class="blog-info">
+                        <div class="blog-author">
+                            Dylan Bloodworth
+                        </div>
+                        <div class="blog-title">
+                            Doomscrolling - Profiting of the attention of people
+                        </div>
+                        <div class="blog-description">
+                            For better or for worse, it’s hard to refute technology’s influence on our culture. Technical innovations in medicine, communication systems, energy, engineering, and AI are just a few fields impacted by tech’s exponential development.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            &copy; 2025 Dylan Bloodworth. All rights reserved.
+        </div>
+    </footer>
+</html>
