@@ -1,0 +1,51 @@
+.blog-container {
+    display: grid;
+    /* grid-template-comment */
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 60px;
+    margin: 5vh 0 0 0.5em;
+    padding: 0.5em 0.75em;
+    overflow-y: scroll;
+}
+
+.blog-img img {
+    border: 1px solid var(--border-color-regular);
+    border-radius: var(--border-radius-400);
+    aspect-ratio: 1200/630;
+}
+
+.blog-img img:hover {
+    background-color: rgba(0,0,0, 0.05);
+}
+
+
+.blog-info {
+    padding : 0.25em;
+}
+
+.blog-author {
+    display: block;
+    padding-top: 0.375em;
+    font-size: 9pt;
+}
+
+.blog-title {
+    display: block;
+    color: var(--blog-title-dark);
+    margin: 0.4em 0;
+    font-size: 18pt;
+    font-weight: bold;
+    line-height: 1.15;
+}
+
+.blog-title:hover {
+    color: var(--text-color-hover);
+}
+
+.blog-description {
+    display: block;
+    font-size: 12pt;
+    color: var(--description-text-medium);
+    text-overflow: ellipsis;
+    margin: 0.25em 0 0 0;
+}
