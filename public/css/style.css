@@ -34,7 +34,6 @@
 .blog-description {
   display: block;
   font-size: 12pt;
-  color: var(--description-text-medium);
   text-overflow: ellipsis;
   margin: 0.25em 0 0 0;
 }
@@ -80,7 +79,7 @@ footer {
 :root {
   --base-padding: 20px;
   --border-color-regular: #00000014;
-  --description-text-medium: #000000a8;
+  --description-text-medium: rgba(0, 0, 0, 0.659)
   --blog-title-dark: 17, 17, 17;
   --text-color-regular: #040404;
   --nav-color: #0009;
@@ -22733,7 +22732,11 @@ video {
 
 .text-gray-title{
   --tw-text-opacity: 1;
-  color: rgba(var(--blog-title-dark), var(--tw-text-opacity));
+  color: rgba(17, 17, 17 , var(--tw-text-opacity));
+}
+
+.text-gray-dark {
+  color: rgba(0, 0, 0, 2/3);
 }
 
 .text-red-50{

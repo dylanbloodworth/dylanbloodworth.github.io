@@ -1,67 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Chasing Curiosity</title>
-        <meta name="This is webpage for myself to be creative and share writings or ideas/" content>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
 
-        <!-- HTMX library -->
-        <script src="https://unpkg.com/htmx.org@2.0.4"
-            integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
-            crossorigin="anonymous"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chasing Curiosity</title>
+    <meta name="This is webpage for myself to be creative and share writings or ideas/" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTMX library -->
+    <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+</head>
 
-        <main class="content">
-
-            <!-- Side Bar Section. -->
-            <div class="border-r color-[var(--nav-color)]">
-                <div class="justify-self-center p-2 py-8 w-4/5 h-auto"><img src="assets/logo.svg"
-                        alt="Chasing Curiosity"></div>
-                <div class="p-3">All our knowledge begins with the senses,
-                    proceeds then to the understanding, and ends with reason.
-                    There is nothing higher than reason.</div>
-                <!-- Navigation/Topic Links -->
-                <div class="grid grid-rows-2 gap-3 pl-4 border-[var(--nav-color)" hx-boost="true">
-                    <!-- hx-boost turns anchors to use AJAX -->
-                    <div class="text-left pl-4 mr-2/3 border-t hover:text-blue-700">One</div>
-                    <div class="text-left pl-4 mr-2/3 hover:text-blue-700">Two</div>
-                    <div class="text-left pl-4 mr-2/3 hover:text-blue-700">Three</div>
-                </div>
+<body>
+    <main class="content">
+        <!-- Side Bar Section. -->
+        <div class="border-r color-[var(--nav-color)]">
+            <div class="justify-self-center p-2 py-8 w-4/5 h-auto"><img src="assets/logo.svg" alt="Chasing Curiosity"></div>
+            <div class="p-3">All our knowledge begins with the senses, proceeds then to the understanding, and ends with reason. There is nothing higher than reason.</div>
+            <!-- Navigation/Topic Links -->
+            <div class="grid grid-rows-2 gap-3 pl-4 border-[var(--nav-color)" hx-boost="true">
+                <!-- hx-boost turns anchors to use AJAX -->
+                <div class="text-left pl-4 mr-2/3 border-t hover:text-blue-500">One</div>
+                <div class="text-left pl-4 mr-2/3 hover:text-blue-500">Two</div>
+                <div class="text-left pl-4 mr-2/3 hover:text-blue-500">Three</div>
             </div>
-
-            <!-- This section contains the main blog  -->
-            <!-- :blogitem --> 
-            <div id="blog-container" class="mt-12 mr-2 py-2 pl-5 pr-3 overflow-y-scroll">
-                <div class="grid grid-cols-2 gap-x-10 gap-y-14">
-                    <div class="blog-item">
-                        <div class="blog-img"  hx-get="/blogpages/blog-template.html" hx-target="#blog-container"> <img
-                                src="assets/1-18-25-doomscrolling.svg"
-                                alt="Doomscrolling"> </div>
-                        <div class="blog-info">
-                            <div class="blog-author">
-                                Dylan Bloodworth
-                            </div>
-                            <div class="blog-title text-gray-title" hx-get="/blogpages/blog-template.html" hx-target="#blog-container">
-                                Doomscrolling - Profiting of the attention of people
-                            </div>
-                            <div class="blog-description">
-                                For better or for worse, it’s hard to refute technology’s influence on our culture. Technical innovations in medicine, communication systems, energy, engineering, and AI are just a few fields impacted by tech’s exponential development.
-                            </div>
-                        </div>
+        </div>
+        <!-- This section contains the main blog  -->
+        <!-- :blogitem -->
+        <div id="blog-container" class="mt-12 mr-2 py-2 pl-5 pr-3 overflow-y-scroll">
+            <div class="grid grid-cols-2 gap-x-10 gap-y-14">
+                <div class="blog-item">
+                    <div class="blog-img cursor-pointer" hx-get="/blogpages/blog-template.html" hx-target="#blog-container"> <img src="assets/1-18-25-doomscrolling.svg" alt="Doomscrolling"> </div>
+                    <div class="blog-info">
+                        <div class="blog-author"> Dylan Bloodworth </div>
+                        <div class="blog-title text-gray-title cursor-pointer hover:text-blue-500" hx-get="/blogpages/doom-scroll.html" hx-target="#blog-container"> Doomscrolling - Profiting of the attention of people</div>
+                        <div class="blog-description text-gray-dark"> For better or for worse, it’s hard to refute technology’s influence on our culture. Technical innovations in medicine, communication systems, energy, engineering, and AI are just a few fields impacted by tech’s exponential development. </div>
                     </div>
                 </div>
             </div>
-        </main>
-    </body>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-content">
-            &copy; 2025 Dylan Bloodworth. All rights reserved.
         </div>
-    </footer>
+    </main>
+</body>
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content"> &copy; 2025 Dylan Bloodworth. All rights reserved. </div>
+</footer>
+
 </html>
