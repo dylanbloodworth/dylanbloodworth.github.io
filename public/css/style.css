@@ -21,7 +21,6 @@
 
 .blog-title {
   display: block;
-  color: var(--blog-title-dark);
   margin: 0.4em 0;
   font-size: 18pt;
   font-weight: bold;
@@ -82,7 +81,7 @@ footer {
   --base-padding: 20px;
   --border-color-regular: #00000014;
   --description-text-medium: #000000a8;
-  --blog-title-dark: #111;
+  --blog-title-dark: 17, 17, 17;
   --text-color-regular: #040404;
   --nav-color: #0009;
   --border-radius-400: 0.375rem;
@@ -22730,6 +22729,11 @@ video {
 .text-gray-900{
   --tw-text-opacity: 1;
   color: rgba(17, 24, 39, var(--tw-text-opacity));
+}
+
+.text-gray-title{
+  --tw-text-opacity: 1;
+  color: rgba(var(--blog-title-dark), var(--tw-text-opacity));
 }
 
 .text-red-50{
