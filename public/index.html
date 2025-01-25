@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
 
-        <!-- htmx library -->
+        <!-- HTMX library -->
         <script src="https://unpkg.com/htmx.org@2.0.4"
             integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
             crossorigin="anonymous"></script>
@@ -18,24 +18,23 @@
         <main class="content">
 
             <!-- Side Bar Section. -->
-            <div class="side-bar">
-                <div class="logo"><img src="assests/logo.svg"
+            <div class="border-r color-[var(--nav-color)]">
+                <div class="justify-self-center p-2 py-8 w-4/5 h-auto"><img src="assests/logo.svg"
                         alt="Chasing Curiosity"></div>
-                <div class="caption">All our knowledge begins with the senses,
+                <div class="p-3">All our knowledge begins with the senses,
                     proceeds then to the understanding, and ends with reason.
                     There is nothing higher than reason.</div>
                 <!-- Navigation/Topic Links -->
-                <div class="topic-list" hx-boost="true">
+                <div class="grid grid-rows-2 gap-3 pl-4 border-[var(--nav-color)" hx-boost="true">
                     <!-- hx-boost turns anchors to use AJAX -->
-                    <div
-                        class="topic-item border-t-[1px] border-[var(--border-color-regular)] pt-4">One</div>
-                    <div class="topic-item">Two</div>
-                    <div class="topic-item">Three</div>
+                    <div class="text-left pl-4 mr-2/3 border-t hover:text-blue-700">One</div>
+                    <div class="text-left pl-4 mr-2/3 hover:text-blue-700">Two</div>
+                    <div class="text-left pl-4 mr-2/3 hover:text-blue-700">Three</div>
                 </div>
             </div>
 
             <!-- This section contains the main blog  -->
-            <div class="blog-container">
+            <div class="blog-container grid grid-cols-2 mt-12 mr-2 gap-x-10 gap-y-14 py-2 px-3 overflow-y-scroll">
                 <div class="blog-item">
                     <div class="blog-img"> <img
                             src="assests/1-18-25-doomscrolling.svg"
