@@ -22739,6 +22739,10 @@ video {
   color: rgba(0, 0, 0, 2/3);
 }
 
+.text-gray-light {
+  color: #00000014;
+}
+
 .text-red-50{
   --tw-text-opacity: 1;
   color: rgba(254, 242, 242, var(--tw-text-opacity));
