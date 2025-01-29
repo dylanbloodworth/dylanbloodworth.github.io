@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="text-sm">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Test Blog</title>
     </head>
     <body>
-        <h1 class="text-4xl font-bold pb-2 text-gray-title">Blog Template</h1>
-        <div class="textsm pb-8">Dylan Bloodworth</div>
-        <div>Text Here</div>
+        <div hx-get="../index.html" hx-select="#blog-container" hx-indicator="pointer">Back</div>
+        <div class="px-12">
+            <h1 class="text-4xl font-bold pb-2 text-gray-title">Blog Template</h1>
+            <div class="text-xs pb-8">Dylan Bloodworth</div>
+            <div>Text Here</div>
+        </div>
     </body>
 </html>
