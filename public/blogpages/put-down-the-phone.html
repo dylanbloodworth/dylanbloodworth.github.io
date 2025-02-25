@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="text-sm">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Blog</title>
+</head>
+
+<body>
+    <div class="text-lg px-12">
+        <!--This back button works on github server. The servers handle the location of index differently, so I need /public/index.html to be github to see things correctly-->
+        <div class="cursor-pointer hover:text-blue-700" hx-get="../public/index.html" hx-select="#blog-container"
+            hx-target="#blog-container" hx-swap="outerHTML">Back to blogs</div>
+        <h1 class="text-4xl font-bold pb-2 text-gray-title pt-5">Put the phone down - <span class="text-3xl">or pick it
+                back up</span>
+        </h1>
+        <div class="text-xs pb-8 font-normal">Dylan Bloodworth</div>
+        <div>
+            <p class="mb-5">I feel a sinking dread whenever I decide to put my phone down and sit with myself.
+                Articulating the experience is challenging. My phone calls to me. It lures me, masterfully occupying my
+                mind with surface-level ideas and quick dopamine hits.</p>
+
+            <hr>
+
+            <p class="my-5"> I put the phone down, face down, with a conviction so strong one might've thought the girl
+                from “The
+                Ring” would crawl out. I realize the mistake I've made. The real world feels so dull, almost black and
+                white. Thoughts and ideas previously held captive by the endless scroll are now lethargic. Streams of
+                consciousness are nonexistent. Trains of thought never leave their stations.</p>
+
+            <hr>
+            <p class="my-5">I might as well pick up my phone and start scrolling again. It’s calling to me. It’s not
+                like I was
+                thinking anything important anyway.</p>
+        </div>
+    </div>
+</body>
+
+</html>
